@@ -1,11 +1,11 @@
-FROM docker.io/library/ubuntu:24.04
+FROM docker.io/library/ubuntu:22.04
 # FROM https://hub.docker.com/_/ubuntu
 
 LABEL com.github.containers.toolbox="true" \
-    name="ubuntu-toolbox" \
+    name="ubuntu-22-toolbox" \
     usage="This image is meant to be used with the toolbox or distrobox command" \
     summary="A cloud-native terminal experience powered by Ubuntu" \
-    maintainer="jorge.castro@gmail.com"
+    maintainer="drew@moseleynet.net"
 
 COPY ./toolboxes/ubuntu-toolbox/packages.ubuntu /toolbox-packages
 
